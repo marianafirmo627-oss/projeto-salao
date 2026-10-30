@@ -1,2 +1,2 @@
-# projeto-sal-o
+# projeto-salao
 projeto avaliativo
