@@ -15,15 +15,6 @@
             margin-bottom: 35px;
         }
 
-        .sobre-secao h3 {
-            color: #7A5C28;
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
-            margin-bottom: 12px;
-            border-bottom: 2px solid #E5DCD0;
-            padding-bottom: 6px;
-        }
-
         /* --- GALERIA DO ESPAÇO (FOTOS LADO A LADO) --- */
         .espaco-grid {
             display: flex;
@@ -53,6 +44,7 @@
             }
         }
 
+        /* --- GRID E CARDS DA EQUIPE --- */
         .equipa-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -101,27 +93,6 @@
             margin-bottom: 10px;
             display: block;
         }
-
-        .membro-card p {
-            font-size: 0.9rem;
-            color: #5C4E46;
-            margin: 0;
-            line-height: 1.4;
-        }
-
-        .info-card {
-            background-color: #FAF7F2;
-            border: 1px solid #E5DCD0;
-            border-radius: 10px;
-            padding: 25px;
-            margin-top: 20px;
-        }
-
-        .info-card p {
-            margin: 8px 0;
-            color: #5C4E46;
-            font-size: 0.95rem;
-        }
     </style>
 </head>
 
@@ -147,16 +118,20 @@
         <div id="main">
             <h2>Sobre o Lumine</h2>
             <p>
-                Fundado com a missão de realçar a essência e a autoestima de cada cliente, o <strong>Lumine</strong> nasceu da paixão pela beleza, pelo autocuidado e pelo atendimento humanizado. O nosso espaço foi planeado nos mínimos detalhes para oferecer um refúgio de paz, sofisticação e bem-estar.
+                Fundado com a missão de realçar a essência e a autoestima de cada cliente, o <strong>Lumine</strong>
+                nasceu da paixão pela beleza, pelo autocuidado e pelo atendimento humanizado. O nosso espaço foi
+                planeado nos mínimos detalhes para oferecer um refúgio de paz, sofisticação e bem-estar.
             </p>
 
-            <div class="sobre-secao" style="margin-top: 30px;">
+            <div class="sobre-secao">
                 <h3>A Nossa Filosofia & Instalações</h3>
                 <p>
-                    Acreditamos que cuidar da beleza não é apenas um procedimento estético, mas sim um momento sagrado de conexão consigo mesma. O nosso salão conta com uma área de recepção acolhedora e climatizada, estações de cabelo equipadas com espelhos iluminados, lavatórios com massagem relaxante e um cantinho especial de manicure e maquiagem planeado para o seu conforto total.
+                    Acreditamos que cuidar da beleza não é apenas um procedimento estético, mas sim um momento sagrado
+                    de conexão consigo mesma. O nosso salão conta com uma área de recepção acolhedora e climatizada,
+                    estações de cabelo equipadas com espelhos iluminados, lavatórios com massagem relaxante e um
+                    cantinho especial de manicure e maquiagem planeado para o seu conforto total.
                 </p>
 
-                <!-- GALERIA COM AS FOTOS E GIFS DO ESTABELECIMENTO -->
                 <div class="espaco-grid">
                     <img src="../fotos/entrada.webp" alt="Entrada do Salão Lumine">
                     <img src="../fotos/espera.webp" alt="Sofá de espera do salão">
@@ -171,44 +146,44 @@
                 <p>Contamos com profissionais altamente qualificados e apaixonados pelo que fazem:</p>
 
                 <div class="equipa-grid">
-                    <!-- Beatriz -->
                     <div class="membro-card">
                         <div class="membro-foto">
                             <img src="../fotos/Beatriz.jpg" alt="Beatriz Oliveira">
                         </div>
                         <h4>Beatriz Oliveira</h4>
                         <span class="cargo">Fundadora & Hair Stylist</span>
-                        <p>Especialista em cortes modernos, visagismo e colorimetria avançada com mais de 10 anos de experiência.</p>
+                        <p>Especialista em cortes modernos, visagismo e colorimetria avançada com mais de 10 anos de
+                            experiência.</p>
                     </div>
 
-                    <!-- Camila -->
                     <div class="membro-card">
                         <div class="membro-foto">
                             <img src="../fotos/Camila.jpg" alt="Camila Souza">
                         </div>
                         <h4>Camila Souza</h4>
                         <span class="cargo">Especialista em Loiras</span>
-                        <p>Apaixonada por transformações e tratamentos de reconstrução e loiras iluminadas com máxima saudabilidade.</p>
+                        <p>Apaixonada por transformações e tratamentos de reconstrução e loiras iluminadas com máxima
+                            saudabilidade.</p>
                     </div>
 
-                    <!-- Larissa -->
                     <div class="membro-card">
                         <div class="membro-foto">
                             <img src="../fotos/Larissa.jpg" alt="Larissa Lima">
                         </div>
                         <h4>Larissa Lima</h4>
                         <span class="cargo">Manicure & Nail Designer</span>
-                        <p>Perfeccionista em cutilagem, esmaltação duradoura e técnicas delicadas de decoração de unhas.</p>
+                        <p>Perfeccionista em cutilagem, esmaltação duradoura e técnicas delicadas de decoração de unhas.
+                        </p>
                     </div>
 
-                    <!-- Juliana -->
                     <div class="membro-card">
                         <div class="membro-foto">
                             <img src="../fotos/Juliana.jpg" alt="Juliana Mendes">
                         </div>
                         <h4>Juliana Mendes</h4>
                         <span class="cargo">Maquiadora & Designer</span>
-                        <p>Especialista em maquiagem social de alta fixação e design de sobrancelhas personalizado para cada rosto.</p>
+                        <p>Especialista em maquiagem social de alta fixação e design de sobrancelhas personalizado para
+                            cada rosto.</p>
                     </div>
                 </div>
             </div>
@@ -217,12 +192,11 @@
                 <h3>Onde Estamos Localizados</h3>
                 <p>O nosso salão de beleza está situado numa zona de fácil acesso e com total comodidade para ti:</p>
 
-                <div class="info-card">
-                    <p>📍 <strong>Endereço:</strong> Rua da Beleza, 123 - Bairro Nobre - João Pessoa, PB</p>
-                    <p>🕒 <strong>Horário de Funcionamento:</strong> Terça a Sábado, das 09:00 às 18:00</p>
-                    <p>🚗 <strong>Facilidades:</strong> Estacionamento gratuito na rua e ambiente totalmente climatizado.</p>
-                    <p>📞 <strong>Telefone de Contato:</strong> (83) 99999-9999</p>
-                </div>
+                <p>📍 <strong>Endereço:</strong> Rua da Beleza, 123 - Bairro Nobre - João Pessoa, PB</p>
+                <p>🕒 <strong>Horário de Funcionamento:</strong> Terça a Sábado, das 09:00 às 18:00</p>
+                <p>🚗 <strong>Facilidades:</strong> Estacionamento gratuito na rua e ambiente totalmente climatizado.
+                </p>
+                <p>📞 <strong>Telefone de Contato:</strong> (83) 99999-9999</p>
             </div>
 
         </div>
