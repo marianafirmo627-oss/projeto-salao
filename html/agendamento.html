@@ -8,10 +8,9 @@
     <meta name="description" content="Página de agendamento do Lumine">
     <title>Lumine - Agendamento</title>
 
-    <!-- O ../ serve para sair da pasta html e ir buscar o CSS na pasta css -->
     <link rel="stylesheet" href="../css/estilizar.css">
-    
-    <!-- Estilo específico para a tabela interativa de serviços -->
+
+    <!-- Estilo exclusivo e necessário para a tabela interativa de serviços -->
     <style>
         .tabela-precos {
             width: 100%;
@@ -23,25 +22,31 @@
             overflow: hidden;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
         }
-        .tabela-precos th, .tabela-precos td {
+
+        .tabela-precos th,
+        .tabela-precos td {
             border: 1px solid #E5DCD0;
             padding: 10px 12px;
             text-align: left;
             color: #5C4E46;
         }
+
         .tabela-precos th {
             background-color: #F4EFEA;
             color: #7A5C28;
             font-weight: 600;
         }
+
         .coluna-check {
             text-align: center;
             width: 40px;
         }
+
         .tabela-precos tr:hover {
             background-color: #FAF7F2;
             cursor: pointer;
         }
+
         .secao-tabela-titulo {
             background-color: #FAF7F2;
             color: #7A5C28;
@@ -74,26 +79,24 @@
         <div id="main">
             <h2>Agende seu horário!</h2>
             <p>
-                Marque os serviços desejados diretamente na tabela abaixo e preencha o formulário para solicitar seu agendamento no Lumine.
+                Marque os serviços desejados diretamente na tabela abaixo e preencha o formulário para solicitar seu
+                agendamento no Lumine.
             </p>
 
-            <!-- O action aponta para realizado.html que está na mesma pasta html -->
             <form action="realizado.html" method="GET">
-                <div id="agendamento" style="max-width: 650px;">
-                    <label for="nome">Nome completo:</label><br>
+                <div id="agendamento">
+                    <label for="nome">Nome completo:</label>
                     <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-                    <br><br>
 
-                    <label for="telefone">Telefone:</label><br>
+                    <label for="telefone">Telefone:</label>
                     <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
-                    <br><br>
 
                     <h3>Escolha os serviços:</h3>
                     <p style="font-size: 13px; color: #8C7B70; margin-top: -5px; margin-bottom: 15px;">
                         Podes selecionar um ou mais serviços na tabela abaixo:
                     </p>
 
-                    <!-- Tabela Interativa de Serviços com Checkboxes Organizada por Categorias -->
+                    <!-- Tabela Interativa de Serviços com Checkboxes -->
                     <table class="tabela-precos">
                         <thead>
                             <tr>
@@ -103,27 +106,33 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- PACOTE ESPECIAL NOIVA & MADRINHAS -->
+                            <!-- noiva madrinha -->
                             <tr>
                                 <td colspan="3" class="secao-tabela-titulo">Pacote Especial Noiva & Madrinhas</td>
                             </tr>
                             <tr>
-                                <td class="coluna-check"><input type="checkbox" name="servico" value="Dia da Noiva VIP"></td>
-                                <td>Dia da Noiva Lumine VIP (Com prévia, penteado, maquiagem blindada, cílios, hidratação, manicure, pedicure e massagem)</td>
+                                <td class="coluna-check"><input type="checkbox" name="servico" value="Dia da Noiva VIP">
+                                </td>
+                                <td>Dia da Noiva Lumine VIP (Com prévia, penteado, maquiagem blindada, cílios,
+                                    hidratação, manicure, pedicure e massagem)</td>
                                 <td>R$ 550,00</td>
                             </tr>
                             <tr>
-                                <td class="coluna-check"><input type="checkbox" name="servico" value="Combo Madrinhas"></td>
-                                <td>Combo Madrinhas (Penteado social/escova, maquiagem com cílios e manicure simples)</td>
+                                <td class="coluna-check"><input type="checkbox" name="servico" value="Combo Madrinhas">
+                                </td>
+                                <td>Combo Madrinhas (Penteado social/escova, maquiagem com cílios e manicure simples)
+                                </td>
                                 <td>R$ 220,00</td>
                             </tr>
                             <tr>
-                                <td class="coluna-check"><input type="checkbox" name="servico" value="Pacote Noiva + 3 Madrinhas"></td>
-                                <td>Pacote Noiva + 3 Madrinhas (Com 10% de desconto e brinde de espumante e tábua de frios)</td>
+                                <td class="coluna-check"><input type="checkbox" name="servico"
+                                        value="Pacote Noiva + 3 Madrinhas"></td>
+                                <td>Pacote Noiva + 3 Madrinhas (Com 10% de desconto e brinde de espumante e tábua de
+                                    frios)</td>
                                 <td>R$ 1.080,00</td>
                             </tr>
 
-                            <!-- CUIDADOS CAPILARES -->
+                            <!-- cuidados capilares -->
                             <tr>
                                 <td colspan="3" class="secao-tabela-titulo">Cuidados Capilares</td>
                             </tr>
@@ -158,7 +167,7 @@
                                 <td>R$ 180,00</td>
                             </tr>
 
-                            <!-- MANICURE & PEDICURE -->
+                            <!-- mão e pé -->
                             <tr>
                                 <td colspan="3" class="secao-tabela-titulo">Manicure & Pedicure</td>
                             </tr>
@@ -199,13 +208,11 @@
                             </tr>
                         </tbody>
                     </table>
-                    <br>
 
-                    <label for="data">Data desejada:</label><br>
+                    <label for="data">Data desejada:</label>
                     <input type="date" id="data" name="data" required>
-                    <br><br>
 
-                    <label for="horario">Horário desejado:</label><br>
+                    <label for="horario">Horário desejado:</label>
                     <select id="horario" name="horario" required>
                         <option value="">Selecione um horário</option>
                         <option value="09:00">09:00</option>
@@ -216,11 +223,9 @@
                         <option value="15:00">15:00</option>
                         <option value="16:00">16:00</option>
                     </select>
-                    <br><br>
 
-                    <label for="observacoes">Observações:</label><br>
+                    <label for="observacoes">Observações:</label>
                     <textarea id="observacoes" name="observacoes" rows="4" placeholder="Alguma observação?"></textarea>
-                    <br><br>
 
                     <input type="submit" value="Solicitar agendamento">
                 </div>
