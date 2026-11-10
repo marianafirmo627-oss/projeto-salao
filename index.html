@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página inicial do salão Lumine">
+    <title>Lumine - Salão de Beleza</title>
+
+    <link rel="stylesheet" href="css/estilizar.css">
+
+    <style>
+        /* --- ESTILOS REFINADOS DA PÁGINA INICIAL --- */
+        .home-intro {
+            background-color: #FAF7F2;
+            border: 1px solid #E5DCD0;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+        }
+
+        .home-intro h2 {
+            color: #7A5C28;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            margin-top: 0;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #E5DCD0;
+            padding-bottom: 8px;
+        }
+
+        .home-intro p {
+            color: #5C4E46;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 0.98rem;
+        }
+
+        .home-grid-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-bloco {
+            background-color: #FFFFFF;
+            border: 1px solid #E5DCD0;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
+        }
+
+        .info-bloco h3 {
+            color: #7A5C28;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .info-bloco p {
+            color: #5C4E46;
+            font-size: 0.93rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .destaque-frase {
+            background-color: #FAF7F2;
+            border-left: 4px solid #7A5C28;
+            border-radius: 0 10px 10px 0;
+            padding: 20px;
+            margin-top: 25px;
+        }
+
+        .destaque-frase h3 {
+            color: #7A5C28;
+            font-family: 'Playfair Display', serif;
+            margin: 0 0 8px 0;
+            font-size: 1.2rem;
+        }
+
+        .destaque-frase p {
+            margin: 0;
+            color: #5C4E46;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>Lumine</h1>
+        <p>Salão de Beleza</p>
+    </div>
+
+    <div id="layout-wrapper">
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="html/servicos.html">Serviços</a></li>
+                <li><a href="html/galeria.html">Galeria</a></li>
+                <li><a href="html/sobrenos.html">Sobre Nós</a></li>
+                <li><a href="html/contato.html">Contato</a></li>
+                <li><a href="html/agendamento.html">Agendamento</a></li>
+            </ul>
+        </div>
+
+        <div id="main">
+            <div class="home-intro">
+                <h2>Bem-vinda ao site da Lumine!</h2>
+                <p>
+                    Bem-vinda(o) ao site Lumine! Aqui você encontra tudo o que precisa para cuidar da sua beleza, bem-estar e autoestima. 
+                    Em nosso espaço digital, você pode conhecer nossos serviços detalhados, conferir registros dos nossos trabalhos, consultar 
+                    informações completas sobre o salão e agendar seu horário de forma prática e rápida.
+                </p>
+                <p style="margin-bottom: 0;">
+                    Nosso grande objetivo é proporcionar a você uma experiência única e acolhedora, unindo excelência técnica, 
+                    qualidade superior em produtos e muito carinho em cada atendimento.
+                </p>
+            </div>
+
+            <div class="home-grid-info">
+                <div class="info-bloco">
+                    <h3>Nossos Serviços</h3>
+                    <p>
+                        Oferecemos um portfólio completo focado em valorizar o seu estilo: cortes personalizados, escovas modeladas, 
+                        hidratações profundas, colorações de alto padrão, além de serviços especializados de manicure, pedicure e maquiagem social.
+                    </p>
+                </div>
+
+                <div class="info-bloco">
+                    <h3>Atendimento Humanizado</h3>
+                    <p>
+                        Acreditamos que cuidar de si mesma vai muito além da estética — é um momento sagrado de pausa na rotina. 
+                        Nossa equipe está preparada para ouvir suas necessidades e entregar um resultado que supere suas expectativas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="destaque-frase">
+                <h3>Cuide de você!</h3>
+                <p>
+                    Reserve um momento especial da sua rotina para renovar sua beleza, recarregar as energias e cuidar de quem mais importa: você! 
+                    Visite nossa página de agendamento e garanta o seu horário.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Lumine - Salão de Beleza</p>
+        <p>Todos os direitos reservados &copy; 2026</p>
+    </div>
+
+</body>
+
+</html>

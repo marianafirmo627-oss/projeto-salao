@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a história e a equipa do salão de beleza Lumine">
+    <title>Lumine - Sobre Nós</title>
+
+    <link rel="stylesheet" href="../css/estilizar.css">
+
+    <style>
+        .sobre-secao {
+            margin-bottom: 35px;
+        }
+
+        .sobre-secao h3 {
+            color: #7A5C28;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #E5DCD0;
+            padding-bottom: 6px;
+        }
+
+        /* --- GALERIA DO ESPAÇO (FOTOS LADO A LADO) --- */
+        .espaco-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .espaco-grid img {
+            flex: 1 1 calc(20% - 15px);
+            min-width: 140px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #E5DCD0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .espaco-grid img:hover {
+            transform: scale(1.03);
+        }
+
+        @media (max-width: 768px) {
+            .espaco-grid img {
+                flex: 1 1 calc(50% - 15px);
+            }
+        }
+
+        .equipa-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .membro-card {
+            background-color: #FFFFFF;
+            border: 1px solid #E5DCD0;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+        }
+
+        .membro-foto {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin: 0 auto 15px auto;
+            overflow: hidden;
+            border: 2px solid #E5DCD0;
+            background-color: #F4EFEA;
+        }
+
+        .membro-foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .membro-card h4 {
+            margin: 0 0 5px 0;
+            color: #3D322C;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+        }
+
+        .membro-card .cargo {
+            font-size: 0.85rem;
+            color: #7A5C28;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .membro-card p {
+            font-size: 0.9rem;
+            color: #5C4E46;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .info-card {
+            background-color: #FAF7F2;
+            border: 1px solid #E5DCD0;
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 20px;
+        }
+
+        .info-card p {
+            margin: 8px 0;
+            color: #5C4E46;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>Lumine</h1>
+        <p>Salão de Beleza</p>
+    </div>
+
+    <div id="layout-wrapper">
+        <div id="menu">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+            </ul>
+        </div>
+
+        <div id="main">
+            <h2>Sobre o Lumine</h2>
+            <p>
+                Fundado com a missão de realçar a essência e a autoestima de cada cliente, o <strong>Lumine</strong> nasceu da paixão pela beleza, pelo autocuidado e pelo atendimento humanizado. O nosso espaço foi planeado nos mínimos detalhes para oferecer um refúgio de paz, sofisticação e bem-estar.
+            </p>
+
+            <div class="sobre-secao" style="margin-top: 30px;">
+                <h3>A Nossa Filosofia & Instalações</h3>
+                <p>
+                    Acreditamos que cuidar da beleza não é apenas um procedimento estético, mas sim um momento sagrado de conexão consigo mesma. O nosso salão conta com uma área de recepção acolhedora e climatizada, estações de cabelo equipadas com espelhos iluminados, lavatórios com massagem relaxante e um cantinho especial de manicure e maquiagem planeado para o seu conforto total.
+                </p>
+
+                <!-- GALERIA COM AS FOTOS E GIFS DO ESTABELECIMENTO -->
+                <div class="espaco-grid">
+                    <img src="../fotos/entrada.webp" alt="Entrada do Salão Lumine">
+                    <img src="../fotos/espera.webp" alt="Sofá de espera do salão">
+                    <img src="../gif/interior.gif" alt="Vista do interior do salão">
+                    <img src="../gif/especialnoiva.gif" alt="Espaço especial noiva">
+                    <img src="../gif/interior2.gif" alt="Segundo ambiente interno do salão">
+                </div>
+            </div>
+
+            <div class="sobre-secao">
+                <h3>Conheça a Nossa Equipa</h3>
+                <p>Contamos com profissionais altamente qualificados e apaixonados pelo que fazem:</p>
+
+                <div class="equipa-grid">
+                    <!-- Beatriz -->
+                    <div class="membro-card">
+                        <div class="membro-foto">
+                            <img src="../fotos/Beatriz.jpg" alt="Beatriz Oliveira">
+                        </div>
+                        <h4>Beatriz Oliveira</h4>
+                        <span class="cargo">Fundadora & Hair Stylist</span>
+                        <p>Especialista em cortes modernos, visagismo e colorimetria avançada com mais de 10 anos de experiência.</p>
+                    </div>
+
+                    <!-- Camila -->
+                    <div class="membro-card">
+                        <div class="membro-foto">
+                            <img src="../fotos/Camila.jpg" alt="Camila Souza">
+                        </div>
+                        <h4>Camila Souza</h4>
+                        <span class="cargo">Especialista em Loiras</span>
+                        <p>Apaixonada por transformações e tratamentos de reconstrução e loiras iluminadas com máxima saudabilidade.</p>
+                    </div>
+
+                    <!-- Larissa -->
+                    <div class="membro-card">
+                        <div class="membro-foto">
+                            <img src="../fotos/Larissa.jpg" alt="Larissa Lima">
+                        </div>
+                        <h4>Larissa Lima</h4>
+                        <span class="cargo">Manicure & Nail Designer</span>
+                        <p>Perfeccionista em cutilagem, esmaltação duradoura e técnicas delicadas de decoração de unhas.</p>
+                    </div>
+
+                    <!-- Juliana -->
+                    <div class="membro-card">
+                        <div class="membro-foto">
+                            <img src="../fotos/Juliana.jpg" alt="Juliana Mendes">
+                        </div>
+                        <h4>Juliana Mendes</h4>
+                        <span class="cargo">Maquiadora & Designer</span>
+                        <p>Especialista em maquiagem social de alta fixação e design de sobrancelhas personalizado para cada rosto.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sobre-secao">
+                <h3>Onde Estamos Localizados</h3>
+                <p>O nosso salão de beleza está situado numa zona de fácil acesso e com total comodidade para ti:</p>
+
+                <div class="info-card">
+                    <p>📍 <strong>Endereço:</strong> Rua da Beleza, 123 - Bairro Nobre - João Pessoa, PB</p>
+                    <p>🕒 <strong>Horário de Funcionamento:</strong> Terça a Sábado, das 09:00 às 18:00</p>
+                    <p>🚗 <strong>Facilidades:</strong> Estacionamento gratuito na rua e ambiente totalmente climatizado.</p>
+                    <p>📞 <strong>Telefone de Contato:</strong> (83) 99999-9999</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Lumine - Salão de Beleza</p>
+        <p>Todos os direitos reservados &copy; 2026</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+body {
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #FAF7F2; /* Off-White suave */
+    color: #3D322C; /* Marrom escuro acolhedor */
+}
+
+/* --- Cabeçalho --- */
+#header {
+    background: linear-gradient(135deg, #FAF7F2 0%, #EFEBE4 100%);
+    color: #3D322C;
+    padding: 35px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px solid #D4B26F; /* Detalhe fino em Ouro Envelhecido */
+}
+
+#header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    color: #7A5C28; /* Bronze vibrante e elegante */
+    margin: 0 0 5px 0;
+}
+
+#header p {
+    font-size: 0.95rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8C7B70;
+    margin: 0;
+}
+
+/* --- Layout Principal --- */
+#layout-wrapper {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 30px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* --- Menu Lateral --- */
+#menu {
+    width: 220px;
+    background-color: #FFFFFF;
+    padding: 25px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid #EAE3D9;
+    flex-shrink: 0;
+    align-self: flex-start;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    margin-bottom: 8px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #5C4E46;
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: block;
+    padding: 10px 14px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+#menu a:hover {
+    background-color: #F4EFEA;
+    color: #7A5C28;
+    transform: translateX(4px);
+}
+
+/* --- Conteúdo Principal --- */
+#main {
+    flex: 1;
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid #EAE3D9;
+    min-height: 500px;
+    box-sizing: border-box;
+}
+
+#main h2 {
+    font-family: 'Playfair Display', serif;
+    color: #3D322C;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#main h3 {
+    font-family: 'Playfair Display', serif;
+    color: #7A5C28;
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#main p {
+    line-height: 1.7;
+    color: #5C4E46;
+    font-size: 1rem;
+}
+
+/* --- Agendamento & Formulário --- */
+#agendamento {
+    background-color: #FAF7F2;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 480px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border: 1px solid #E5DCD0;
+}
+
+#agendamento input,
+#agendamento select,
+#agendamento textarea {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #D1C4B4;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    color: #3D322C;
+    font-family: inherit;
+    margin-bottom: 15px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+#agendamento input:focus,
+#agendamento select:focus,
+#agendamento textarea:focus {
+    border-color: #7A5C28;
+}
+
+#agendamento input[type="submit"] {
+    background-color: #7A5C28;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#agendamento input[type="submit"]:hover {
+    background-color: #59421A;
+}
+
+#agendamento input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.opcoes-servicos label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    cursor: pointer;
+    font-weight: 400;
+    color: #5C4E46;
+}
+
+/* --- Rodapé --- */
+#footer {
+    background-color: #3D322C;
+    color: #D5C9BD;
+    padding: 25px 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+    font-size: 0.85rem;
+}
+
+#footer p {
+    margin: 4px 0;
+}

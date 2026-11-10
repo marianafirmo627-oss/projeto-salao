@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria de fotos e procedimentos do salão Lumine">
+    <title>Lumine - Galeria</title>
+
+    <link rel="stylesheet" href="../css/estilizar.css">
+
+    <!-- Estilo para a lista vertical com foto e texto ao lado -->
+    <style>
+        .galeria-lista {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .galeria-card {
+            display: flex;
+            background-color: #FFFFFF;
+            border: 1px solid #E5DCD0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            align-items: center;
+        }
+
+        /* Área da Foto */
+        .galeria-foto {
+            width: 240px;
+            height: 180px;
+            flex-shrink: 0;
+            background-color: #F4EFEA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7A5C28;
+            font-weight: 600;
+            font-size: 15px;
+            border-right: 1px solid #E5DCD0;
+        }
+
+        .galeria-foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Área dos Detalhes / Texto ao lado */
+        .galeria-info {
+            padding: 20px 25px;
+            flex: 1;
+        }
+
+        .galeria-info h3 {
+            margin: 0 0 8px 0;
+            color: #7A5C28;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+        }
+
+        .galeria-info p {
+            margin: 0 0 10px 0;
+            color: #5C4E46;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .galeria-info .incluso {
+            font-size: 0.88rem;
+            color: #8C7B70;
+            background-color: #FAF7F2;
+            padding: 6px 12px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 12px;
+            border: 1px solid #EAE3D9;
+        }
+
+        .galeria-info .preco {
+            font-weight: 700;
+            color: #3D322C;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        /* Botão de Agendamento */
+        .btn-agendar-item {
+            display: inline-block;
+            background-color: #7A5C28;
+            color: #FFFFFF !important;
+            padding: 8px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-agendar-item:hover {
+            background-color: #5C431A;
+            transform: translateY(-2px);
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 600px) {
+            .galeria-card {
+                flex-direction: column;
+            }
+
+            .galeria-foto {
+                width: 100%;
+                height: 200px;
+                border-right: none;
+                border-bottom: 1px solid #E5DCD0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>Lumine</h1>
+        <p>Salão de Beleza</p>
+    </div>
+
+    <div id="layout-wrapper">
+        <div id="menu">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+            </ul>
+        </div>
+
+        <div id="main">
+            <h2>Nossa Galeria de Trabalhos</h2>
+            <p>
+                Confira alguns dos procedimentos realizados pelas nossas especialistas, o que foi incluso em cada atendimento e os valores aplicados.
+            </p>
+
+            <!-- Lista de Resultados (Um abaixo do outro) -->
+            <div class="galeria-lista">
+
+                <!-- Item 1: Corte e Escova -->
+                <div class="galeria-card">
+                    <div class="galeria-foto">
+                        <img src="../fotos/corte e escova.jpg" alt="Corte e Escova Modelada">
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Corte de Cabelo & Escova Modelada</h3>
+                        <p>Renovação de corte em camadas com finalização em escova modelada para dar leveza e movimento aos fios.</p>
+                        <div class="incluso">✨ <strong>Incluso:</strong> Lavagem especial com champô hidratante e secagem rápida.</div>
+                        <div class="preco">Valor: R$ 105,00</div>
+                        <a href="agendamento.html" class="btn-agendar-item">Agendar Este Serviço</a>
+                    </div>
+                </div>
+
+                <!-- Item 2: Morena Iluminada -->
+                <div class="galeria-card">
+                    <div class="galeria-foto">
+                        <img src="../fotos/morena iluminada.jpg" alt="Luzes e Iluminação">
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Luzes / Mechas Morena Iluminada</h3>
+                        <p>Técnica de clareamento suave para destacar os contornos do rosto mantendo a saúde da fibra capilar.</p>
+                        <div class="incluso">✨ <strong>Incluso:</strong> Tonalização, matização e reconstrução pós-descoloração.</div>
+                        <div class="preco">Valor: R$ 270,00</div>
+                        <a href="agendamento.html" class="btn-agendar-item">Agendar Este Serviço</a>
+                    </div>
+                </div>
+
+                <!-- Item 3: Pé e Mão -->
+                <div class="galeria-card">
+                    <div class="galeria-foto">
+                        <img src="../fotos/pé e mão.jpg" alt="Combo Manicure e Pedicure">
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Combo Manicure + Pedicure Completo</h3>
+                        <p>Cuidado completo para pés e mãos com cutilagem funda e esmaltação duradoura.</p>
+                        <div class="incluso">✨ <strong>Incluso:</strong> Esfoliação nos pés e massagem relaxante nas mãos.</div>
+                        <div class="preco">Valor: R$ 70,00</div>
+                        <a href="agendamento.html" class="btn-agendar-item">Agendar Este Serviço</a>
+                    </div>
+                </div>
+
+                <!-- Item 4: Maquiagem -->
+                <div class="galeria-card">
+                    <div class="galeria-foto">
+                        <img src="../fotos/maquiagem.jpg" alt="Maquiagem Social">
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Maquiagem Profissional para Eventos</h3>
+                        <p>Maquiagem social com pele blindada de alta durabilidade e acabamento aveludado.</p>
+                        <div class="incluso">✨ <strong>Incluso:</strong> Aplicação de cílios postiços e preparação de pele com sérum pré-make.</div>
+                        <div class="preco">Valor: R$ 110,00</div>
+                        <a href="agendamento.html" class="btn-agendar-item">Agendar Este Serviço</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Lumine - Salão de Beleza</p>
+        <p>Todos os direitos reservados &copy; 2026</p>
+    </div>
+
+</body>
+
+</html>
