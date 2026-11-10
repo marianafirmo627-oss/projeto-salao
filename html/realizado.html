@@ -9,6 +9,52 @@
     <title>Lumine - Agendamento Realizado</title>
 
     <link rel="stylesheet" href="../css/estilizar.css">
+
+    <style>
+        .sucesso-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .botoes-grupo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .btn-acao {
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: bold;
+            width: 260px;
+            text-align: center;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primario {
+            background-color: #7A5C28;
+            color: #FFFFFF !important;
+        }
+
+        .btn-primario:hover {
+            background-color: #5C431A;
+        }
+
+        .btn-secundario {
+            background-color: #FAF7F2;
+            color: #7A5C28 !important;
+            border: 2px solid #7A5C28;
+            padding: 10px 22px;
+        }
+
+        .btn-secundario:hover {
+            background-color: #E5DCD0;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,21 +76,23 @@
             </ul>
         </div>
 
-        <div id="main" style="text-align: center; padding: 40px;">
-            <h2>Agendamento Realizado com Sucesso! ✨</h2>
-            
-            <p style="font-size: 16px; margin: 20px 0;">
-                Recebemos a tua solicitação de agendamento no <strong>Lumine</strong>. <br>
-                Entraremos em contacto em breve para confirmar o teu horário.
-            </p>
+        <div id="main">
+            <div class="sucesso-container">
+                <h2>Agendamento Realizado com Sucesso!</h2>
 
-            <div style="margin-top: 30px; display: flex; flex-direction: column; align-items: center; gap: 12px;">
-                <a href="../index.html" style="text-decoration: none; background-color: #7A5C28; color: white; padding: 12px 24px; border-radius: 6px; font-weight: bold; width: 260px; text-align: center; box-sizing: border-box;">
-                    Voltar para a Página Inicial
-                </a>
-                <a href="servicos.html" style="text-decoration: none; background-color: #FAF7F2; color: #7A5C28; border: 2px solid #7A5C28; padding: 10px 22px; border-radius: 6px; font-weight: bold; width: 260px; text-align: center; box-sizing: border-box;">
-                    Ver Nossos Serviços 💇‍♀️
-                </a>
+                <p>
+                    Recebemos sua solicitação de agendamento no <strong>Lumine</strong>.<br>
+                    Entraremos em contato em breve para confirmar seu horário.
+                </p>
+
+                <div class="botoes-grupo">
+                    <a href="../index.html" class="btn-acao btn-primario">
+                        Voltar para a Página Inicial
+                    </a>
+                    <a href="servicos.html" class="btn-acao btn-secundario">
+                        Ver Nossos Serviços
+                    </a>
+                </div>
             </div>
         </div>
     </div>
