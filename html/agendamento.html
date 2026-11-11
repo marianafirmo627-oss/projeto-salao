@@ -7,14 +7,15 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="content-language" content="pt-br">
     <meta name="author" content="Mariana Firmo da Silva">
-    <meta name="description" content="Agende seu horário no salão Lumine de forma prática e rápida. Escolha entre nossos serviços de beleza, cuidados capilares, manicure, pedicure, maquiagem e pacotes especiais para noivas e madrinhas.">
+    <meta name="description"
+        content="Agende seu horário no salão Lumine de forma prática e rápida. Escolha entre nossos serviços de beleza, cuidados capilares, manicure, pedicure, maquiagem e pacotes especiais para noivas e madrinhas.">
     <meta name="keywords" content="Lumine, agendamento, salão de beleza, agendar horário, serviços de beleza">
-    
+
     <title>Lumine - Agendamento</title>
 
     <link rel="stylesheet" href="../css/estilizar.css">
 
-    <!-- Estilo exclusivo e necessário para a tabela interativa de serviços e alertas -->
+    <!-- Estilo exclusivo e necessário para a tabela interativa, alertas e centralização -->
     <style>
         .tabela-precos {
             width: 100%;
@@ -73,6 +74,23 @@
         .aviso-pagamento strong {
             color: #7A5C28;
         }
+
+        /* Centralização do quadrado/container de agendamento */
+        #agendamento {
+            max-width: 650px;
+            margin: 0 auto;
+            /* Centraliza horizontalmente */
+            background-color: #FFFFFF;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+            border: 1px solid #E5DCD0;
+        }
+
+        #main {
+            text-align: left;
+            /* Mantém o texto alinhado corretamente dentro do container centralizado */
+        }
     </style>
 </head>
 
@@ -96,11 +114,13 @@
         </div>
 
         <div id="main">
-            <h2>Agende seu horário!</h2>
-            <p>
-                Marque os serviços desejados diretamente na tabela abaixo e preencha o formulário para solicitar seu
-                agendamento no Lumine.
-            </p>
+            <div style="text-align: center; margin-bottom: 25px;">
+                <h2>Agende seu horário!</h2>
+                <p>
+                    Marque os serviços desejados diretamente na tabela abaixo e preencha o formulário para solicitar seu
+                    agendamento no Lumine.
+                </p>
+            </div>
 
             <form action="realizado.html" method="GET">
                 <div id="agendamento">
@@ -248,7 +268,8 @@
 
                     <!-- Aviso de Pagamento -->
                     <div class="aviso-pagamento">
-                        <strong>Nota sobre o pagamento:</strong> Os pagamentos são realizados presencialmente no salão no dia do atendimento.
+                        <strong>Nota sobre o pagamento:</strong> Os pagamentos são realizados presencialmente no salão
+                        no dia do atendimento.
                     </div>
 
                     <input type="submit" value="Solicitar agendamento">
