@@ -9,12 +9,12 @@
     <meta name="author" content="Mariana Firmo da Silva">
     <meta name="description" content="Agende seu horário no salão Lumine de forma prática e rápida. Escolha entre nossos serviços de beleza, cuidados capilares, manicure, pedicure, maquiagem e pacotes especiais para noivas e madrinhas.">
     <meta name="keywords" content="Lumine, agendamento, salão de beleza, agendar horário, serviços de beleza">
-   
+    
     <title>Lumine - Agendamento</title>
 
     <link rel="stylesheet" href="../css/estilizar.css">
 
-    <!-- Estilo exclusivo e necessário para a tabela interativa de serviços -->
+    <!-- Estilo exclusivo e necessário para a tabela interativa de serviços e alertas -->
     <style>
         .tabela-precos {
             width: 100%;
@@ -57,6 +57,21 @@
             font-family: 'Playfair Display', serif;
             font-weight: bold;
             font-size: 1.05rem;
+        }
+
+        /* Estilo para a caixa de aviso de pagamento */
+        .aviso-pagamento {
+            background-color: #FAF7F2;
+            border-left: 4px solid #7A5C28;
+            color: #5C4E46;
+            padding: 12px 16px;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .aviso-pagamento strong {
+            color: #7A5C28;
         }
     </style>
 </head>
@@ -230,6 +245,11 @@
 
                     <label for="observacoes">Observações:</label>
                     <textarea id="observacoes" name="observacoes" rows="4" placeholder="Alguma observação?"></textarea>
+
+                    <!-- Aviso de Pagamento -->
+                    <div class="aviso-pagamento">
+                        <strong>Nota sobre o pagamento:</strong> Os pagamentos são realizados presencialmente no salão no dia do atendimento.
+                    </div>
 
                     <input type="submit" value="Solicitar agendamento">
                 </div>
