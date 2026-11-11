@@ -1,2 +1,3 @@
 # projeto-salao
-projeto avaliativo
+projeto avaliativo, envio até dia 16/11 até as 06:59.
+O objetivo deste projeto é apresentar a proposta conceitual e visual do Salão Lumine, um espaço dedicado à beleza e ao bem-estar que busca unir sofisticação, conforto e atendimento personalizado. A ideia central é oferecer uma experiência diferenciada para os clientes, combinando um ambiente acolhedor a um catálogo completo de serviços de estética e cuidados pessoais. Toda a apresentação foi pensada para transmitir a essência da marca, destacando a qualidade dos atendimentos, a clareza nas informações de preços e a facilidade de navegação para quem busca agendar um horário ou conhecer mais sobre o trabalho realizado pelo salão.
